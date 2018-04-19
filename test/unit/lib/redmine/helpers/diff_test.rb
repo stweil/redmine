@@ -24,7 +24,7 @@ class DiffTest < ActiveSupport::TestCase
   end
 
   def test_dont_double_escape
-    # 3 cases to test in the before: first word, last word, everything inbetween
+    # 3 cases to test in the before: first word, last word, everything between
     before = "<stuff> with html & special chars</danger>"
     # all words in after are treated equal
     after  = "other stuff <script>alert('foo');</alert>"

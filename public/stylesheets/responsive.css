@@ -69,7 +69,7 @@
   }
 
   select {
-    max-width: 100%;  /* prevent long names within select menues from breaking content */
+    max-width: 100%;  /* prevent long names within select menus from breaking content */
   }
 
   #wrapper {

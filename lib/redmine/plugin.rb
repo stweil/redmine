@@ -363,7 +363,7 @@ module Redmine #:nodoc:
     # * +name+ - formatter name
     # * +formatter+ - formatter class, which should have an instance method +to_html+
     # * +helper+ - helper module, which will be included by wiki pages (optional)
-    # * +html_parser+ class reponsible for converting HTML to wiki text (optional)
+    # * +html_parser+ class responsible for converting HTML to wiki text (optional)
     # * +options+ - a Hash of options (optional)
     #   * :label - label for the formatter displayed in application settings
     #

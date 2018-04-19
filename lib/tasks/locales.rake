@@ -123,7 +123,7 @@ END_DESC
     end
   end
 
-  desc 'Duplicates a key. Exemple rake locales:dup key=foo new_key=bar'
+  desc 'Duplicates a key. Example rake locales:dup key=foo new_key=bar'
   task :dup do
     dir = ENV['DIR'] || './config/locales'
     files = Dir.glob(File.join(dir,'*.yml'))

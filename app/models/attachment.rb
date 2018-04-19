@@ -221,7 +221,7 @@ class Attachment < ActiveRecord::Base
       begin
         Redmine::Thumbnail.generate(self.diskfile, target, size)
       rescue => e
-        logger.error "An error occured while generating thumbnail for #{disk_filename} to #{target}\nException was: #{e.message}" if logger
+        logger.error "An error occurred while generating thumbnail for #{disk_filename} to #{target}\nException was: #{e.message}" if logger
         return nil
       end
     end
@@ -445,7 +445,7 @@ class Attachment < ActiveRecord::Base
   rescue ActiveRecord::StatementInvalid, ActiveRecord::RecordNotFound
     # Catch and ignore lock errors. It is not critical if deduplication does
     # not happen, therefore we do not retry.
-    # with_lock throws ActiveRecord::RecordNotFound if the record isnt there
+    # with_lock throws ActiveRecord::RecordNotFound if the record isn't there
     # anymore, thats why this is caught and ignored as well.
   end
 

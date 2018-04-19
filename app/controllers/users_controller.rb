@@ -133,7 +133,7 @@ class UsersController < ApplicationController
       @user.password, @user.password_confirmation = params[:user][:password], params[:user][:password_confirmation]
     end
     @user.safe_attributes = params[:user]
-    # Was the account actived ? (do it before User#save clears the change)
+    # Was the account activated ? (do it before User#save clears the change)
     was_activated = (@user.status_change == [User::STATUS_REGISTERED, User::STATUS_ACTIVE])
     # TODO: Similar to My#account
     @user.pref.safe_attributes = params[:pref]
